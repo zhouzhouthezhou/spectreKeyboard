@@ -4127,8 +4127,8 @@ L Analog_Switch:ADG633YRU U?
 U 2 1 60CCA171
 P 2900 7000
 AR Path="/60CCA171" Ref="U?"  Part="2" 
-AR Path="/6055A05F/60CCA171" Ref="U3"  Part="2" 
-F 0 "U3" H 2900 7149 50  0000 C CNN
+AR Path="/6055A05F/60CCA171" Ref="U5"  Part="2" 
+F 0 "U5" H 2900 7149 50  0000 C CNN
 F 1 "ADG633YRU" H 2900 7240 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2900 7000 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.pdf" H 2900 7000 50  0001 C CNN
