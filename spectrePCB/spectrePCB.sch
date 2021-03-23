@@ -439,66 +439,14 @@ F18 "COL11" I L 8300 3300 50
 F19 "COL12" I L 8300 3400 50 
 F20 "COL13" I L 8300 3500 50 
 F21 "COL14" I L 8300 3600 50 
-F22 "COL15" I L 8300 3700 50 
-F23 "COL16" I L 8300 3800 50 
-F24 "L+" I R 9700 2200 50 
-F25 "L-" O R 9700 4350 50 
+F22 "L+" I R 9700 2200 50 
+F23 "L-" O R 9700 4350 50 
 $EndSheet
-Connection ~ 2400 3500
 Wire Wire Line
-	2400 3500 2400 3250
-Wire Wire Line
-	3350 3800 3350 3900
-Wire Wire Line
-	3200 3800 3350 3800
-$Comp
-L power:GND #PWR?
-U 1 1 608320DA
-P 3350 3900
-F 0 "#PWR?" H 3350 3650 50  0001 C CNN
-F 1 "GND" H 3355 3727 50  0000 C CNN
-F 2 "" H 3350 3900 50  0001 C CNN
-F 3 "" H 3350 3900 50  0001 C CNN
-	1    3350 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 3800 3000 3800
-Wire Wire Line
-	2600 3800 2700 3800
-Wire Wire Line
-	2200 3500 2400 3500
-Wire Wire Line
-	1900 3800 2200 3800
+	1900 3800 2100 3800
 Connection ~ 1900 3800
 Wire Wire Line
-	1900 3500 2000 3500
-Wire Wire Line
-	1900 3800 1900 3500
-Wire Wire Line
 	1850 3800 1900 3800
-$Comp
-L Transistor_FET:BS250 Q?
-U 1 1 607DB3CA
-P 2400 3700
-F 0 "Q?" V 2600 3600 50  0000 C CNN
-F 1 "BS250" V 2600 3850 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2600 3625 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2400 3700 50  0001 L CNN
-	1    2400 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 607B83A1
-P 3100 3800
-F 0 "R?" V 2895 3800 50  0000 C CNN
-F 1 "500" V 2986 3800 50  0000 C CNN
-F 2 "" H 3100 3800 50  0001 C CNN
-F 3 "~" H 3100 3800 50  0001 C CNN
-	1    3100 3800
-	0    1    1    0   
-$EndComp
 Connection ~ 2900 4100
 Wire Wire Line
 	3200 4100 2900 4100
@@ -590,36 +538,14 @@ F 3 "~" H 2650 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 606BD547
-P 2400 3250
-F 0 "#PWR?" H 2400 3100 50  0001 C CNN
-F 1 "+5V" H 2415 3423 50  0000 C CNN
-F 2 "" H 2400 3250 50  0001 C CNN
-F 3 "" H 2400 3250 50  0001 C CNN
-	1    2400 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D?
-U 1 1 606B968A
-P 2800 3800
-F 0 "D?" H 2800 3700 50  0000 C CNN
-F 1 "LED_Red" H 2800 3684 50  0001 C CNN
-F 2 "" V 2800 3800 50  0001 C CNN
-F 3 "~" V 2800 3800 50  0001 C CNN
-	1    2800 3800
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:Polyfuse_Small F?
 U 1 1 606B6552
-P 2100 3500
-F 0 "F?" V 2050 3500 50  0000 C CNN
-F 1 "500mA" V 2150 3500 50  0000 C CNN
-F 2 "" H 2150 3300 50  0001 L CNN
-F 3 "~" H 2100 3500 50  0001 C CNN
-	1    2100 3500
+P 2150 3000
+F 0 "F?" V 2100 3000 50  0000 C CNN
+F 1 "500mA" V 2200 3000 50  0000 C CNN
+F 2 "" H 2200 2800 50  0001 L CNN
+F 3 "~" H 2150 3000 50  0001 C CNN
+	1    2150 3000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -683,10 +609,6 @@ Text GLabel 8100 3500 0    50   Input ~ 0
 COL13
 Text GLabel 8100 3600 0    50   Input ~ 0
 COL14
-Text GLabel 8100 3700 0    50   Input ~ 0
-COL15
-Text GLabel 8100 3800 0    50   Input ~ 0
-COL16
 Text GLabel 8100 3950 0    50   Input ~ 0
 ROW0
 Text GLabel 8100 4050 0    50   Input ~ 0
@@ -727,10 +649,6 @@ Wire Wire Line
 	8100 3500 8300 3500
 Wire Wire Line
 	8100 3600 8300 3600
-Wire Wire Line
-	8100 3700 8300 3700
-Wire Wire Line
-	8100 3800 8300 3800
 Wire Wire Line
 	8100 3950 8300 3950
 Wire Wire Line
@@ -816,19 +734,15 @@ Text GLabel 6800 4100 2    50   Input ~ 0
 COL13
 Text GLabel 6800 4200 2    50   Input ~ 0
 COL14
-Text GLabel 6800 4000 2    50   Input ~ 0
-COL15
-Text GLabel 6800 3900 2    50   Input ~ 0
-COL16
 Text GLabel 6800 4700 2    50   Input ~ 0
 ROW0
-Text GLabel 6800 2500 2    50   Input ~ 0
-ROW1
-Text GLabel 6800 3200 2    50   Input ~ 0
-ROW2
 Text GLabel 6800 3700 2    50   Input ~ 0
-ROW3
+ROW1
 Text GLabel 6800 3800 2    50   Input ~ 0
+ROW2
+Text GLabel 6800 3900 2    50   Input ~ 0
+ROW3
+Text GLabel 6800 4000 2    50   Input ~ 0
 ROW4
 Text GLabel 6800 2600 2    50   Input ~ 0
 SCK
@@ -886,4 +800,133 @@ Wire Wire Line
 	6500 5300 6800 5300
 Wire Wire Line
 	6500 5400 6800 5400
+$Comp
+L Analog_Switch:TS3A24159DGSR U?
+U 3 1 605A1ABA
+P 3700 5900
+F 0 "U?" H 3880 5946 50  0000 L CNN
+F 1 "TS3A24159DGSR" H 3880 5855 50  0000 L CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 3700 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts3a24159.pdf" H 2650 5450 50  0001 C CNN
+	3    3700 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3000 1900 3800
+Wire Wire Line
+	2400 3000 2250 3000
+Wire Wire Line
+	2100 3800 2100 3450
+Wire Wire Line
+	1900 3000 2050 3000
+Wire Wire Line
+	2400 3000 2400 3150
+$Comp
+L Analog_Switch:TS3A24159DGSR U?
+U 1 1 6059CE33
+P 2400 3550
+F 0 "U?" H 2400 3700 50  0000 C CNN
+F 1 "TS3A24159DGSR" H 2400 3750 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 2400 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts3a24159.pdf" H 1350 3100 50  0001 C CNN
+	1    2400 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 606B968A
+P 2900 3550
+F 0 "D?" H 2900 3450 50  0000 C CNN
+F 1 "LED_Red" H 2900 3434 50  0001 C CNN
+F 2 "" V 2900 3550 50  0001 C CNN
+F 3 "~" V 2900 3550 50  0001 C CNN
+	1    2900 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 607B83A1
+P 3200 3550
+F 0 "R?" V 2995 3550 50  0000 C CNN
+F 1 "1k" V 3086 3550 50  0000 C CNN
+F 2 "" H 3200 3550 50  0001 C CNN
+F 3 "~" H 3200 3550 50  0001 C CNN
+	1    3200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3550 2800 3550
+Wire Wire Line
+	3000 3550 3100 3550
+$Comp
+L power:GND #PWR?
+U 1 1 608320DA
+P 3450 3650
+F 0 "#PWR?" H 3450 3400 50  0001 C CNN
+F 1 "GND" H 3455 3477 50  0000 C CNN
+F 2 "" H 3450 3650 50  0001 C CNN
+F 3 "" H 3450 3650 50  0001 C CNN
+	1    3450 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3550 3450 3550
+Wire Wire Line
+	3450 3550 3450 3650
+Connection ~ 2400 3000
+Wire Wire Line
+	2400 2750 2400 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 606BD547
+P 2400 2750
+F 0 "#PWR?" H 2400 2600 50  0001 C CNN
+F 1 "+5V" H 2415 2923 50  0000 C CNN
+F 2 "" H 2400 2750 50  0001 C CNN
+F 3 "" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2700 3350
+NoConn ~ 1850 4800
+NoConn ~ 1850 4900
+NoConn ~ 1850 5100
+NoConn ~ 1850 5200
+NoConn ~ 1850 5400
+NoConn ~ 1850 5500
+NoConn ~ 1850 5700
+NoConn ~ 1850 5800
+NoConn ~ 1850 6000
+NoConn ~ 1850 6100
+NoConn ~ 5300 3100
+$Comp
+L power:+5V #PWR?
+U 1 1 606B51FC
+P 3700 5200
+F 0 "#PWR?" H 3700 5050 50  0001 C CNN
+F 1 "+5V" H 3715 5373 50  0000 C CNN
+F 2 "" H 3700 5200 50  0001 C CNN
+F 3 "" H 3700 5200 50  0001 C CNN
+	1    3700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 606B6343
+P 3700 6600
+F 0 "#PWR?" H 3700 6350 50  0001 C CNN
+F 1 "GND" H 3705 6427 50  0000 C CNN
+F 2 "" H 3700 6600 50  0001 C CNN
+F 3 "" H 3700 6600 50  0001 C CNN
+	1    3700 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5200 3700 5400
+Wire Wire Line
+	3700 6400 3700 6600
+Text GLabel 6800 3200 2    50   Input ~ 0
+BCK
+Text GLabel 6800 2500 2    50   Input ~ 0
+CAPS
 $EndSCHEMATC

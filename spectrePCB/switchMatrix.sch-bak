@@ -1707,35 +1707,29 @@ Wire Wire Line
 $Comp
 L Device:LED_Small D?
 U 1 1 62643D11
-P 1400 3800
-F 0 "D?" H 1450 3900 50  0000 R CNN
-F 1 "LED_White" H 1650 3750 50  0001 R CNN
-F 2 "" V 1400 3800 50  0001 C CNN
-F 3 "~" V 1400 3800 50  0001 C CNN
-	1    1400 3800
-	0    -1   -1   0   
+P 3800 7500
+F 0 "D?" H 3850 7600 50  0000 R CNN
+F 1 "LED_White" H 4050 7450 50  0001 R CNN
+F 2 "" V 3800 7500 50  0001 C CNN
+F 3 "~" V 3800 7500 50  0001 C CNN
+	1    3800 7500
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 62643D17
-P 1400 3550
-F 0 "R?" V 1300 3500 50  0000 L CNN
-F 1 "2k" V 1500 3500 50  0000 L CNN
-F 2 "" H 1400 3550 50  0001 C CNN
-F 3 "~" H 1400 3550 50  0001 C CNN
-	1    1400 3550
-	1    0    0    -1  
+P 3500 7500
+F 0 "R?" V 3400 7450 50  0000 L CNN
+F 1 "2k" V 3600 7450 50  0000 L CNN
+F 2 "" H 3500 7500 50  0001 C CNN
+F 3 "~" H 3500 7500 50  0001 C CNN
+	1    3500 7500
+	0    1    1    0   
 $EndComp
-Text HLabel 1400 3400 2    50   Input ~ 0
+Text HLabel 2750 7550 0    50   Input ~ 0
 L+
-Text HLabel 1400 3950 2    50   Output ~ 0
+Text HLabel 4000 7500 2    50   Output ~ 0
 L-
-Wire Wire Line
-	1400 3650 1400 3700
-Wire Wire Line
-	1400 3900 1400 3950
-Wire Wire Line
-	1400 3400 1400 3450
 $Comp
 L Device:LED_Small D?
 U 1 1 62646D3D
@@ -3728,7 +3722,7 @@ Connection ~ 7050 3200
 Connection ~ 7650 3200
 Connection ~ 8250 3200
 Wire Wire Line
-	800  3900 1050 3900
+	800  3900 900  3900
 Connection ~ 1050 3900
 Connection ~ 1650 3900
 Connection ~ 2250 3900
@@ -3878,4 +3872,72 @@ Wire Wire Line
 	4650 4600 5250 4600
 Wire Wire Line
 	4650 5300 7050 5300
+$Comp
+L Analog_Switch:TS3A24159DGSR U?
+U 2 1 606F2D57
+P 2150 6600
+AR Path="/606F2D57" Ref="U?"  Part="2" 
+AR Path="/6055A05F/606F2D57" Ref="U?"  Part="2" 
+F 0 "U?" H 2150 6749 50  0000 C CNN
+F 1 "TS3A24159DGSR" H 2150 6840 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 2150 6250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts3a24159.pdf" H 1100 6150 50  0001 C CNN
+	2    2150 6600
+	1    0    0    1   
+$EndComp
+$Comp
+L 74xGxx:74LVC2G08 U?
+U 1 1 6075D06D
+P 1750 5900
+F 0 "U?" H 1725 6167 50  0000 C CNN
+F 1 "74LVC2G08" H 1725 6076 50  0000 C CNN
+F 2 "" H 1750 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1750 5900 50  0001 C CNN
+	1    1750 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G08 U?
+U 2 1 6075F02B
+P 3050 7500
+F 0 "U?" H 3025 7767 50  0000 C CNN
+F 1 "74LVC2G08" H 3025 7676 50  0000 C CNN
+F 2 "" H 3050 7500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 3050 7500 50  0001 C CNN
+	2    3050 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4900 1250 5850
+Wire Wire Line
+	1250 5850 1450 5850
+Connection ~ 1250 4900
+Wire Wire Line
+	900  3900 900  5950
+Wire Wire Line
+	900  5950 1450 5950
+Connection ~ 900  3900
+Wire Wire Line
+	900  3900 1050 3900
+Wire Wire Line
+	2000 5900 2150 5900
+Wire Wire Line
+	2150 5900 2150 6200
+Wire Wire Line
+	3300 7500 3400 7500
+Wire Wire Line
+	3600 7500 3700 7500
+Wire Wire Line
+	3900 7500 4000 7500
+$Comp
+L MyComponents:CD74HC73M96 U?
+U 1 1 60B4B38C
+P 4050 6450
+F 0 "U?" H 4050 6817 50  0000 C CNN
+F 1 "CD74HC73M96" H 4050 6726 50  0000 C CNN
+F 2 "" H 4050 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 4050 6450 50  0001 C CNN
+	1    4050 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
