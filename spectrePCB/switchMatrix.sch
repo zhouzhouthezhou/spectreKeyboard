@@ -227,7 +227,7 @@ L MX_Alps_Hybrid:MX-NoLED MX61
 U 1 1 605AC390
 P 8400 4250
 F 0 "MX61" H 8433 4473 60  0000 C CNN
-F 1 "ctrl" H 8433 4399 20  0000 C CNN
+F 1 "ctrlR" H 8433 4399 20  0000 C CNN
 F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 7775 4225 60  0001 C CNN
 F 3 "" H 7775 4225 60  0001 C CNN
 	1    8400 4250
@@ -282,7 +282,7 @@ L MX_Alps_Hybrid:MX-NoLED MX55
 U 1 1 605AC372
 P 1800 4250
 F 0 "MX55" H 1833 4473 60  0000 C CNN
-F 1 "ctrl" H 1833 4399 20  0000 C CNN
+F 1 "ctrlL" H 1833 4399 20  0000 C CNN
 F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 1175 4225 60  0001 C CNN
 F 3 "" H 1175 4225 60  0001 C CNN
 	1    1800 4250
@@ -2805,8 +2805,6 @@ F 3 "~" H 6900 2150 50  0001 C CNN
 	1    6900 2150
 	1    0    0    -1  
 $EndComp
-Text HLabel 6900 2000 2    50   Input ~ 0
-L+
 Text HLabel 6900 2550 2    50   Output ~ 0
 L-
 Wire Wire Line
@@ -4137,4 +4135,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.
 $EndComp
 NoConn ~ 3200 6150
 NoConn ~ 3200 6800
+Text HLabel 6900 2000 2    50   Input ~ 0
+L+
 $EndSCHEMATC
