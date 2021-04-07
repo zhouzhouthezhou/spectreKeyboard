@@ -676,36 +676,6 @@ Wire Wire Line
 	9700 4350 10000 4350
 Wire Wire Line
 	10000 4350 10000 4600
-Text GLabel 6800 4900 2    50   Input ~ 0
-COL0
-Text GLabel 6800 5000 2    50   Input ~ 0
-COL1
-Text GLabel 6800 5100 2    50   Input ~ 0
-COL2
-Text GLabel 6800 5200 2    50   Input ~ 0
-COL3
-Text GLabel 6800 5300 2    50   Input ~ 0
-COL4
-Text GLabel 6800 5400 2    50   Input ~ 0
-COL5
-Text GLabel 6800 3500 2    50   Input ~ 0
-COL6
-Text GLabel 6800 3400 2    50   Input ~ 0
-COL7
-Text GLabel 6800 3100 2    50   Input ~ 0
-COL8
-Text GLabel 6800 3000 2    50   Input ~ 0
-COL9
-Text GLabel 6800 2900 2    50   Input ~ 0
-COL10
-Text GLabel 6800 4400 2    50   Input ~ 0
-COL11
-Text GLabel 6800 4300 2    50   Input ~ 0
-COL12
-Text GLabel 6800 4100 2    50   Input ~ 0
-COL13
-Text GLabel 6800 4200 2    50   Input ~ 0
-COL14
 Text GLabel 6800 4700 2    50   Input ~ 0
 ROW0
 Text GLabel 6800 3700 2    50   Input ~ 0
@@ -979,4 +949,34 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.
 	4    3850 6150
 	1    0    0    -1  
 $EndComp
+Text GLabel 6800 4400 2    50   Input ~ 0
+COL1
+Text GLabel 6800 4300 2    50   Input ~ 0
+COL0
+Text GLabel 6800 2900 2    50   Input ~ 0
+COL2
+Text GLabel 6800 3000 2    50   Input ~ 0
+COL3
+Text GLabel 6800 3100 2    50   Input ~ 0
+COL4
+Text GLabel 6800 3400 2    50   Input ~ 0
+COL5
+Text GLabel 6800 3500 2    50   Input ~ 0
+COL6
+Text GLabel 6800 5400 2    50   Input ~ 0
+COL7
+Text GLabel 6800 5300 2    50   Input ~ 0
+COL8
+Text GLabel 6800 5200 2    50   Input ~ 0
+COL9
+Text GLabel 6800 5100 2    50   Input ~ 0
+COL10
+Text GLabel 6800 5000 2    50   Input ~ 0
+COL11
+Text GLabel 6800 4200 2    50   Input ~ 0
+COL13
+Text GLabel 6800 4100 2    50   Input ~ 0
+COL14
+Text GLabel 6800 4900 2    50   Input ~ 0
+COL12
 $EndSCHEMATC
